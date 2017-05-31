@@ -10,6 +10,7 @@ Building & Releasing
 ====================
 ```
 docker build -t elixirelm/phoenix-container:1.3 .
+git push
 git checkout master
 git merge 1.3
 git push
