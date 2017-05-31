@@ -15,4 +15,7 @@ RUN \
   mix local.rebar --force && \
   mix archive.install --force https://github.com/phoenixframework/archives/raw/master/phx_new.ez
 
+ENV MYAPP_DIR "/myapp"
+ENV MIX_ENV "prod"
+
 CMD ["iex"]
