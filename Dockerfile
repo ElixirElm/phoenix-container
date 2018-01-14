@@ -2,8 +2,9 @@ FROM elixir:1.5.3
 
 RUN \
   apt-get update && \
-  apt-get install -y apt-utils && \
   apt-get upgrade -y && \
+  apt-get install -y apt-utils && \
+  apt-get install -y inotify-tools && \
   curl -sL https://deb.nodesource.com/setup_7.x | bash - && \
   apt-get install -y nodejs && \
   apt-get clean && \
