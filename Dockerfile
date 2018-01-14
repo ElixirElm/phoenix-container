@@ -1,6 +1,9 @@
-FROM elixir:1.4.5
+FROM elixir:1.5.3
 
 RUN \
+  apt-get update && \
+  apt-get install -y apt-utils && \
+  apt-get upgrade -y && \
   curl -sL https://deb.nodesource.com/setup_7.x | bash - && \
   apt-get install -y nodejs && \
   apt-get clean && \
