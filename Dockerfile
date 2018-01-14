@@ -1,4 +1,4 @@
-FROM elixir:1.4.4
+FROM elixir:1.4.5
 
 RUN \
   curl -sL https://deb.nodesource.com/setup_7.x | bash - && \
@@ -10,7 +10,7 @@ RUN \
 ENV PHOENIX_VERSION ""
 
 RUN \
-  echo "Phoenix 1.3.0-rc.2" && \
+  echo "Phoenix 1.3.0" && \
   mix local.hex --force && \
   mix local.rebar --force && \
   mix archive.install --force https://github.com/phoenixframework/archives/raw/master/phx_new.ez

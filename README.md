@@ -9,12 +9,12 @@ docker run elixirelm/phoenix-container elixir
 Building & Releasing
 ====================
 ```
-docker build -t elixirelm/phoenix-container:1.3 .
+docker build -t elixirelm/phoenix-container:1.3_1.4.5 .
 git push
-docker push elixirelm/phoenix-container:1.3
+docker push elixirelm/phoenix-container:1.3_1.4.5
 git checkout master
-git merge 1.3
+git merge docker 1.3_1.4.5
 git push
-docker tag elixirelm/phoenix-container:1.3 elixirelm/blorg:latest
+docker tag elixirelm/phoenix-container:1.3_1.4.5 elixirelm/blorg:latest
 docker push elixirelm/phoenix-container:latest
 ```
